@@ -1,0 +1,33 @@
+{
+    "name": "rdj/rajaongkir",
+    "description": "This Package for easy use Raja Ongkir API",
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rangga Darmajati",
+            "email": "rangga.android69@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "require-dev": {
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rdj\\Rajaongkir\\": "src/"
+        }
+    },
+    "extra":{
+        "laravel": {
+            "providers":[
+                "Rdj\\Rajaongkir\\RajaongkirServiceProvider"
+            ],
+            "aliases":{
+                "Rajaongkir": "Rdj\\Rajaongkir\\Facades\\Rajaongkir"
+            }
+        }
+    }
+}
