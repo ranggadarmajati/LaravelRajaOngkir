@@ -64,7 +64,7 @@ $getData = Rajaongkir::setEndpoint('province')
                     ->setQuery([])
                     ->get();
         
-return response()->json( $getProvince['rajaongkir'] );
+return response()->json( $getData['rajaongkir'] );
 ```
 #### - Mengambil data Provinsi by id
 ```code
@@ -74,7 +74,7 @@ $getData = Rajaongkir::setEndpoint('province')
                     ->setQuery(['id' => $id])
                     ->get();
         
-return response()->json( $getProvince['rajaongkir'] );
+return response()->json( $getData['rajaongkir'] );
 ```
 
 #### - Mengambil data Kota
@@ -84,7 +84,7 @@ $getData = Rajaongkir::setEndpoint('city')
                     ->setQuery([])
                     ->get();
         
-return response()->json( $getProvince['rajaongkir'] );
+return response()->json( $getData['rajaongkir'] );
 ```
 #### - Mengambil data Kota by id
 ```code
@@ -94,7 +94,7 @@ $getData = Rajaongkir::setEndpoint('city')
                     ->setQuery(['id' => $id])
                     ->get();
         
-return response()->json( $getProvince['rajaongkir'] );
+return response()->json( $getData['rajaongkir'] );
 ```
 #### - Mengambil data Kecematan by id (Only Account pro)
 ```code
@@ -104,7 +104,7 @@ $getData = Rajaongkir::setEndpoint('subdistrict')
                     ->setQuery(['id' => $id])
                     ->get();
         
-return response()->json( $getProvince['rajaongkir'] );
+return response()->json( $getData['rajaongkir'] );
 ```
 #### - Mengambil data Biaya Ongkir (Account pro)
 ```code
